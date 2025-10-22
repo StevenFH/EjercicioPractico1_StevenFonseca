@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.ejerciciopractico1_stevenfonseca.Service;
 
-/**
- *
- * @author fstev
- */
-public class CategoriaService {
-    
+import com.ejerciciopractico1_stevenfonseca.Domain.Categoria;
+import java.util.List;
+
+
+public interface CategoriaService {
+    List<Categoria> listarTodos();
+    Categoria guardar(Categoria categoria);
+    Categoria obtenerPorId(Long id);
+    void eliminar(Long id);
 }
+
